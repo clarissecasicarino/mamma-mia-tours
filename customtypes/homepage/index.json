@@ -1,0 +1,22 @@
+{
+  "id": "homepage",
+  "label": "Home Page",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": { "label": "Document UID", "placeholder": "" }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": { "package_carousel": { "type": "SharedSlice" } }
+        }
+      }
+    }
+  }
+}

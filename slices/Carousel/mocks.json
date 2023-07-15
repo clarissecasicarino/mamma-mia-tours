@@ -1,0 +1,92 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"anchor_id_carousel": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "packageCarousel",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"package_info",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "list-item",
+									"content": {
+										"text": "3 Days",
+										"spans": []
+									},
+									"direction": "ltr"
+								},
+								{
+									"type": "list-item",
+									"content": {
+										"text": "Island Tour",
+										"spans": []
+									},
+									"direction": "ltr"
+								},
+								{
+									"type": "list-item",
+									"content": {
+										"text": "Musical Night",
+										"spans": []
+									},
+									"direction": "ltr"
+								},
+								{
+									"type": "list-item",
+									"content": {
+										"text": "Group Discounts",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"package_bg_color",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Color",
+							"value": "#5345F5"
+						}
+					],
+					[
+						"package_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Dancing Queen Delight"
+						}
+					],
+					[
+						"package_price",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "49.99"
+						}
+					]
+				]
+			}
+		]
+	}
+]

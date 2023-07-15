@@ -1,0 +1,50 @@
+{
+  "id": "package_carousel",
+  "type": "SharedSlice",
+  "name": "Carousel",
+  "description": "PackageCarousel",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "anchor_id_carousel": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Anchor ID Carousel",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {
+        "package_title": {
+          "type": "Text",
+          "config": { "label": "Package Title", "placeholder": "" }
+        },
+        "package_price": {
+          "type": "Text",
+          "config": { "label": "Package Price", "placeholder": "" }
+        },
+        "package_info": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Package Info",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "package_bg_color": {
+          "type": "Color",
+          "config": { "label": "Package BG Color", "placeholder": "" }
+        }
+      }
+    }
+  ]
+}
