@@ -17,7 +17,7 @@ const CustomCheckMark = () => <span className="mr-2">&#x2713;</span>;
 
 const components: PrismicRichTextProps["components"] = {
   listItem: ({ children }) => (
-    <li className="flex items-start text-base">
+    <li className="flex items-start text-14 py-2">
       <CustomCheckMark />
       <span className="ml-1 font-body">{children}</span>
     </li>
@@ -43,19 +43,19 @@ const PackageCarousel = ({ slice }: PackageCarouselProps): JSX.Element => {
             style={{ backgroundColor: item.package_bg_color ?? "white" }}
           >
             <div className="px-6 py-6 flex flex-col gap-y-2">
-              <p key={index} className="font-body text-base">
+              <p key={index} className="font-body text-14">
                 {item.package_title}
               </p>
-              <p className="text-5xl font-display font-extrabold pt-2">
+              <p className="font-display font-extrabold py-5 text-40">
                 {item.package_price}
               </p>
-              <section className="py-4">
+              <section className="py-2">
                 <PrismicRichText
                   field={item.package_info}
                   components={components}
                 />
               </section>
-              <div className="flex py-4 justify-center">
+              <div className="flex pt-3 justify-center">
                 <Button
                   label="Book Now"
                   type="rectangle"
