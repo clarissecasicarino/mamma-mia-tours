@@ -10,7 +10,7 @@ export default function Button({
   label: string;
   isLoading?: boolean;
   onClick?: () => void;
-  type?: "solid" | "outline" | "solid-green";
+  type?: "solid" | "outline";
   btnType?: "button" | "submit" | "reset";
 }): ReactElement {
   let buttonStyle;
@@ -22,12 +22,6 @@ export default function Button({
         "bg-electricBlue-500 hover:bg-green-500 active:bg-green-700";
       textStyle =
         "text-white group-hover:text-electricBlue-500 group-active:text-white";
-      break;
-    case "solid-green":
-      buttonStyle =
-        "bg-green-500 hover:bg-electricBlue-500 active:bg-electricBlue-300";
-      textStyle =
-        "text-electricBlue-500 group-hover:text-white group-active:text-white";
       break;
     case "outline":
       buttonStyle =

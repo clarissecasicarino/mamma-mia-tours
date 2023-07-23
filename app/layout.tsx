@@ -1,22 +1,37 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import "./globals.css";
+import type { Metadata } from "next";
+import { Roboto, Playfair } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+  variable: "--font-roboto",
+  display: "swap",
+});
+
+const playfair = Playfair({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: 'Mamma Mia Tours',
-  description: 'A Next.js, React and TypeScript website developed by Clarisse Casi Carino',
-}
+  title: "Mamma Mia Tours",
+  description:
+    "A Next.js, React and TypeScript website developed by Clarisse Casi Carino",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" 
+    className={`${roboto.variable} ${playfair.variable}`}
+    >
+      <body className="px-10">{children}</body>
     </html>
-  )
+  );
 }

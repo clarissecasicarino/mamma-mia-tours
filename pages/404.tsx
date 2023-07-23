@@ -18,8 +18,8 @@ export default function Custom404() {
         alt="Main Icon"
       />
       <div>
-        <h1>Oops!</h1>
-        <p>
+        <h1 className="font-display">Oops!</h1>
+        <p className="font-body">
           Looks like {`you’ve`} entered the twilight zone of broken links.{" "}
           {`Don't`} fret; {`we'll`} get you back on track in a jiffy! Just click
           the button below and teleport back to our homepage like nothing ever
