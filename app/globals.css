@@ -8,6 +8,7 @@
   --background-end-rgb: 214, 219, 220;
 }
 
+html,
 body {
   color: rgb(var(--foreground-rgb));
 }
