@@ -16,7 +16,7 @@ module.exports = {
     extend: {
       fontFamily: {
         display: ["var(--font-roboto-mono)"],
-        body: ["var(--font-playfair)"],
+        body: ["var(--font-playfair-display)"],
       },
       colors: {
         primaryPurple: "#9381FF",

@@ -37,7 +37,7 @@ export default function Button({
       onClick={onClick}
       className={`${buttonStyle} group h-10 w-60 tablet:w-full flex-1 rounded-lg`}
     >
-      <span className={`${textStyle} text-18 font-semibold`}>{label}</span>
+      <span className={`${textStyle} text-14 font-semibold`}>{label}</span>
     </button>
   );
 }
