@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { Content } from "@prismicio/client";
 import {
   PrismicRichText,
@@ -25,34 +25,43 @@ const components: PrismicRichTextProps["components"] = {
 };
 
 const PackageCarousel = ({ slice }: PackageCarouselProps): JSX.Element => {
-  const notify = (itemTitle: any) => toast.dark(`Yay! Thanks for booking our ${itemTitle} package.`, {
-    icon: "🔥",
-  });
+  const notify = (itemTitle: any) =>
+    toast.dark(`Yay! Thanks for booking our ${itemTitle} package.`, {
+      icon: "🔥",
+    });
 
   return (
     <>
       <Head>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
       </Head>
-      <div className="flex flex-col md:flex-row space-x-2 md:space-x-4 justify-center space-y-4">
+      <div className="flex flex-col laptop:flex-row gap-x-6 justify-center gap-y-6">
         {slice.items.map((item, index) => (
           <div
             key={index}
-            className={`rounded-3xl border h-80 w-full md:w-72`}
+            className={`rounded-3xl border h-[350px] w-full laptop:w-72`}
             style={{ backgroundColor: item.package_bg_color ?? "white" }}
           >
-            <div className="px-4 py-4">
+            <div className="px-6 py-6 flex flex-col gap-y-2">
               <p key={index} className="font-body text-base">
                 {item.package_title}
               </p>
-              <p className="text-5xl font-display font-extrabold">
+              <p className="text-5xl font-display font-extrabold pt-2">
                 {item.package_price}
               </p>
-              <PrismicRichText
-                field={item.package_info}
-                components={components}
-              />
-              <Button label="Book Now" type="solid" onClick={() => notify(item.package_title)} />
+              <section className="py-4">
+                <PrismicRichText
+                  field={item.package_info}
+                  components={components}
+                />
+              </section>
+              <div className="flex py-4 justify-center">
+                <Button
+                  label="Book Now"
+                  type="rectangle"
+                  onClick={() => notify(item.package_title)}
+                />
+              </div>
               <ToastContainer />
             </div>
           </div>

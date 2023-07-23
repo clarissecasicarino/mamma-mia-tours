@@ -25,7 +25,7 @@ export default function Custom404() {
           the button below and teleport back to our homepage like nothing ever
           happened.
         </p>
-        <Button label="Back to Home" type="solid" onClick={navigateToHome} />
+        <Button label="Back to Home" type="rectangle" onClick={navigateToHome} />
       </div>
     </div>
   );
