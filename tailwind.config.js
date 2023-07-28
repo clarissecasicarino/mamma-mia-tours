@@ -7,26 +7,42 @@ module.exports = {
     "./slices/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'mobile': '320px',
+      'tablet': '768px',
+      'laptop': '1024px',
+      'desktop': '1440px',
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       fontFamily: {
-        display: ['"Wix Madefor Display"', "sans-serif"],
-        body: ["Playfair", "serif"],
+        display: ["var(--font-roboto-mono)"],
+        body: ["var(--font-playfair-display)"],
       },
       colors: {
-        electricBlue: {
-          50: "#E5EAFF",
-          100: "#B0BFFF",
-          200: "#7B94FF",
-          300: "#4D6EFF",
-          400: "#244DFF",
-          500: "#0030FF",
-        },
+        primaryPurple: "#9381FF",
+        secondaryPurple: "#E2DEFF",
+        black: "#000000",
+        pastelBlue: "#B8C0FF"
       },
+      fontSize: {
+        10: ["10px", "1rem"],
+        12: ["12px", "1rem"],
+        14: ["14px", "1rem"],
+        16: ["16px", "1rem"],
+        18: ["18px", "1rem"],
+        40: ["40px", "1rem"],
+      },
+      fontWeight: {
+        hairline: '100',
+        extralight: '200',
+        light: '300',
+        regular: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+        extrabold: '800',
+        black: '900',
+      }
     },
   },
   plugins: [],
