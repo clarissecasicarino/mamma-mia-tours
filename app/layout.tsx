@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en" 
     className={`${roboto.variable} ${playfair.variable}`}
     >
-      <body className="px-10">{children}</body>
+      <body className="px-8 tablet:px-10">{children}</body>
     </html>
   );
 }
