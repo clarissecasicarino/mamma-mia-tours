@@ -1,6 +1,6 @@
-import "./globals.css";
+import "./styles/globals.css";
 import type { Metadata } from "next";
-import { Roboto, Playfair } from "next/font/google";
+import { Roboto, Playfair_Display } from "next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -9,10 +9,10 @@ const roboto = Roboto({
   display: "swap",
 });
 
-const playfair = Playfair({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-playfair",
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-playfair-display",
   display: "swap",
 });
 
