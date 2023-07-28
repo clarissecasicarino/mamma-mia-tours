@@ -14,7 +14,7 @@ export default function Button({
 
   switch (type) {
     case "rectangle":
-      buttonStyle = "bg-primaryPurple hover:bg-black active:bg-pastelBlue";
+      buttonStyle = "bg-primaryPurple hover:bg-black active:bg-pastelBlue rounded-lg w-full laptop:w-60";
       textStyle = `text-white group-active:text-black ${"font-body"}`;
       break;
     case "circular":
@@ -23,7 +23,7 @@ export default function Button({
       textStyle = `text-electricBlue-500 ${"font-body"}`;
       break;
     case "special":
-      buttonStyle = "w-full tablet:w-36 bg-black hover:bg-pastelBlue active:bg-primaryPurple";
+      buttonStyle = "w-full tablet:w-36 bg-black hover:bg-pastelBlue active:bg-primaryPurple rounded-lg";
       textStyle = `text-primaryPurple ${"font-body"} text-14 group-hover:text-white`;
       break;
     default:
@@ -34,7 +34,7 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      className={`${buttonStyle} group h-10 w-60 tablet:w-full flex-1 rounded-lg`}
+      className={`${buttonStyle} group h-10`}
     >
       <span className={`${textStyle} text-14 font-semibold`}>{label}</span>
     </button>

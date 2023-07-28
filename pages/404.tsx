@@ -49,7 +49,7 @@ export default function NotFound() {
           the button below and teleport back to our homepage like nothing ever
           happened.
         </p>
-        <div className={`pt-2 w-full ${playfair.variable}`}>
+        <div className={`pt-2 ${playfair.variable}`}>
           <Button
             label="Take Me Home"
             type="special"
