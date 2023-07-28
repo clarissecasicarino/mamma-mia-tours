@@ -8,10 +8,10 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'mobile': '320px',
-      'tablet': '768px',
-      'laptop': '1024px',
-      'desktop': '1440px',
+      "mobile": "320px",
+      "tablet": "768px",
+      "laptop": "1024px",
+      "desktop": "1440px",
     },
     extend: {
       fontFamily: {
@@ -21,6 +21,7 @@ module.exports = {
       colors: {
         primaryPurple: "#9381FF",
         secondaryPurple: "#E2DEFF",
+        tertiaryPurple: "#B8B8FF",
         black: "#000000",
         pastelBlue: "#B8C0FF",
       },
@@ -34,16 +35,16 @@ module.exports = {
         48: ["48px", "1rem"],
       },
       fontWeight: {
-        hairline: '100',
-        extralight: '200',
-        light: '300',
-        regular: '400',
-        medium: '500',
-        semibold: '600',
-        bold: '700',
-        extrabold: '800',
-        black: '900',
-      }
+        hairline: "100",
+        extralight: "200",
+        light: "300",
+        regular: "400",
+        medium: "500",
+        semibold: "600",
+        bold: "700",
+        extrabold: "800",
+        black: "900",
+      },
     },
   },
   plugins: [],

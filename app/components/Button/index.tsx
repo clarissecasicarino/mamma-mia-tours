@@ -19,8 +19,8 @@ export default function Button({
       break;
     case "circular":
       buttonStyle =
-        "border-2 border-electricBlue-500 hover:border-green-500 active:bg-green-500";
-      textStyle = `text-electricBlue-500 ${"font-body"}`;
+        "bg-tertiaryPurple w-32 hover:border-green-500 active:bg-green-500 rounded-full";
+      textStyle = `text-electricBlue-500 ${"font-body"} font-medium`;
       break;
     case "special":
       buttonStyle = "w-full tablet:w-36 bg-black hover:bg-pastelBlue active:bg-primaryPurple rounded-lg";

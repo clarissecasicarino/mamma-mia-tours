@@ -1,0 +1,5 @@
+.first-content-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
