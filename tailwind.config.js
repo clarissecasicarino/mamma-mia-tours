@@ -22,7 +22,7 @@ module.exports = {
         primaryPurple: "#9381FF",
         secondaryPurple: "#E2DEFF",
         black: "#000000",
-        pastelBlue: "#B8C0FF"
+        pastelBlue: "#B8C0FF",
       },
       fontSize: {
         10: ["10px", "1rem"],
@@ -31,6 +31,7 @@ module.exports = {
         16: ["16px", "1rem"],
         18: ["18px", "1rem"],
         40: ["40px", "1rem"],
+        48: ["48px", "1rem"],
       },
       fontWeight: {
         hairline: '100',

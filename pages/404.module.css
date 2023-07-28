@@ -1,7 +1,5 @@
-.playfair-font {
-  font-family: "Playfair Display", serif;
-}
-
-.roboto-font {
-  font-family: "Roboto", sans-serif;
+.custom-404-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

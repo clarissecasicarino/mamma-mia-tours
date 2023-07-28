@@ -23,9 +23,8 @@ export default function Button({
       textStyle = `text-electricBlue-500 ${"font-body"}`;
       break;
     case "special":
-      buttonStyle =
-        "border-2 border-electricBlue-500 hover:border-green-500 active:bg-green-500";
-      textStyle = `text-electricBlue-500 ${"font-body"}`;
+      buttonStyle = "w-full tablet:w-36 bg-black hover:bg-pastelBlue active:bg-primaryPurple";
+      textStyle = `text-primaryPurple ${"font-body"} text-14 group-hover:text-white`;
       break;
     default:
       buttonStyle = "";
