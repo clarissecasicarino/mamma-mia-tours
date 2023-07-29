@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function SecondComponent() {
   return (
     <div className="w-full flex flex-col tablet:flex-row py-4 gap-x-8 justify-center items-center">
-      <div className="max-w-[26rem] max-h-96 flex justify-center">
+      <div className="max-w-[26rem] desktop:max-w-[25rem] max-h-96 flex justify-center">
         <Image src={BeachImage} alt="Beach Image" className="rounded-lg" />
       </div>
       <div className={`space-y-4 max-w-sm laptop:max-w-lg pt-6 tablet:pt-2`}>

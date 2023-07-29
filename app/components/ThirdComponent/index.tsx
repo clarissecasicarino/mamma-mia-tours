@@ -14,7 +14,7 @@ export default function ThirdComponent() {
           Mia, visiting breathtaking sceneries and charming island towns.
         </p>
       </div>
-      <div className="max-w-[26rem] max-h-96 flex justify-center pt-4">
+      <div className="max-w-[26rem] desktop:max-w-[25rem] max-h-96 flex justify-center pt-4">
         <Image src={BoatImage} alt="Beach Image" className="rounded-lg" />
       </div>
     </div>
