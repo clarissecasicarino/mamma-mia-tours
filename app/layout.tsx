@@ -1,6 +1,7 @@
+"use client";
 import "./styles/globals.css";
-import type { Metadata } from "next";
 import { Roboto, Playfair_Display } from "next/font/google";
+import Footer from "./components/Footer";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -16,22 +17,15 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Mamma Mia Tours",
-  description:
-    "A Next.js, React and TypeScript website developed by Clarisse Casi Carino",
-};
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" 
-    className={`${roboto.variable} ${playfair.variable}`}
-    >
+    <html lang="en" className={`${roboto.variable} ${playfair.variable}`}>
       <body className="px-8 tablet:px-10">{children}</body>
+      <Footer />
     </html>
   );
 }
