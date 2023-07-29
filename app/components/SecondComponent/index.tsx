@@ -13,7 +13,7 @@ export default function SecondComponent() {
           Dance Your Way to Adventure
         </p>
         <p
-          className={`text-14 laptop:text-16 font-body leading-normal tablet:leading-normal laptop:leading-normal`}
+          className={`text-14 laptop:text-16 font-body leading-relaxed tablet:leading-relaxed laptop:leading-relaxed`}
         >
           Experience the magic of Mamma Mia Here We Go Again as you embark on an
           unforgettable journey through remarkable destinations.
