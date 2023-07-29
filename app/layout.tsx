@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import "./styles/globals.css";
 import { Roboto, Playfair_Display } from "next/font/google";
 import Footer from "./components/Footer";
@@ -23,9 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" 
-    className={`${roboto.variable} ${playfair.variable}`}
-    >
+    <html lang="en" className={`${roboto.variable} ${playfair.variable}`}>
       <body className="px-8 tablet:px-10">{children}</body>
       <Footer />
     </html>
