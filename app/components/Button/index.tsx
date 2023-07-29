@@ -24,7 +24,7 @@ export default function Button({
       break;
     case "special":
       buttonStyle = "w-full tablet:w-36 bg-black hover:bg-pastelBlue active:bg-primaryPurple rounded-lg";
-      textStyle = `text-primaryPurple ${"font-body"} text-14 group-hover:text-white`;
+      textStyle = `text-primaryPurple ${"font-body"} group-hover:text-white`;
       break;
     default:
       buttonStyle = "";
@@ -36,7 +36,7 @@ export default function Button({
       onClick={onClick}
       className={`${buttonStyle} group h-10`}
     >
-      <span className={`${textStyle} text-14 font-semibold`}>{label}</span>
+      <span className={`${textStyle} text-12 laptop:text-14 font-semibold`}>{label}</span>
     </button>
   );
 }

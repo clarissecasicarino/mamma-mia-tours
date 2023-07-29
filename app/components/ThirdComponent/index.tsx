@@ -9,7 +9,7 @@ export default function ThirdComponent() {
         <p className={`font-display text-32 font-extrabold leading-tight`}>
           Customize Your Perfect Getaway
         </p>
-        <p className={`text-14 tablet:text-16 font-body leading-relaxed`}>
+        <p className={`text-14 laptop:text-16 font-body leading-normal tablet:leading-normal laptop:leading-normal`}>
           Create a tailor-made itinerary that incorporates the best of Mamma
           Mia, visiting breathtaking sceneries and charming island towns.
         </p>
