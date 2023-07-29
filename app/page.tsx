@@ -5,6 +5,7 @@ import "./styles/globals.css";
 import FirstComponent from "./components/FirstComponent";
 import SecondComponent from "./components/SecondComponent";
 import ThirdComponent from "./components/ThirdComponent";
+import QuestionComponent from "./components/QuestionComponent";
 
 export default async function Home() {
   const client = createClient();
@@ -17,6 +18,7 @@ export default async function Home() {
       <SecondComponent />
       <ThirdComponent />
       <SliceZone slices={document.data.slices} components={components} />
+      <QuestionComponent />
     </div>
   );
 }
