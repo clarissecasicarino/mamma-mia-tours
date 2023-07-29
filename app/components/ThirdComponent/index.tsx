@@ -6,7 +6,7 @@ export default function ThirdComponent() {
   return (
     <div className="w-full flex flex-col tablet:flex-row py-4 gap-x-8 justify-center items-center">
       <div className={`space-y-4 max-w-sm laptop:max-w-lg tablet:pt-2`}>
-        <p className={`font-display text-32 font-extrabold leading-tight`}>
+        <p className={`font-display text-30 laptop:text-32 font-extrabold leading-tight`}>
           Customize Your Perfect Getaway
         </p>
         <p className={`text-14 laptop:text-16 font-body leading-relaxed tablet:leading-relaxed laptop:leading-relaxed`}>

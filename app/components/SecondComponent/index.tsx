@@ -9,7 +9,7 @@ export default function SecondComponent() {
         <Image src={BeachImage} alt="Beach Image" className="rounded-lg" />
       </div>
       <div className={`space-y-4 max-w-sm laptop:max-w-lg pt-6 tablet:pt-2`}>
-        <p className={`font-display text-32 font-extrabold leading-tight`}>
+        <p className={`font-display text-30 laptop:text-32 font-extrabold leading-tight`}>
           Dance Your Way to Adventure
         </p>
         <p
