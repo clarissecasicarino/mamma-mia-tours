@@ -5,8 +5,8 @@ import { FaTwitter, FaInstagram } from "react-icons/fa";
 function Footer(): ReactElement {
   return (
     <>
-      <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-200" />
-      <footer className="bg-gray-200 py-8 text-left font-body">
+      <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-200" />
+      <footer className="py-6 text-left font-body">
         <div className="container px-8 tablet:px-10 grid grid-cols-2 gap-8">
           <div>
             <h1 className="font-semibold text-14">About the Company</h1>
