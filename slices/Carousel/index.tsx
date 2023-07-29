@@ -39,7 +39,7 @@ const PackageCarousel = ({ slice }: PackageCarouselProps): JSX.Element => {
         {slice.items.map((item, index) => (
           <div
             key={index}
-            className={`rounded-3xl border h-[325px] w-full laptop:w-[298px]`}
+            className={`rounded-3xl border h-[330px] w-full laptop:w-[298px]`}
             style={{ backgroundColor: item.package_bg_color ?? "white" }}
           >
             <div className="px-6 py-5 flex flex-col gap-y-2">
