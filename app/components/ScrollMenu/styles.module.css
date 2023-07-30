@@ -1,0 +1,10 @@
+.parent {
+  position: relative;
+}
+
+.parent > .child {
+  display: none;
+}
+.parent:hover > .child {
+  display: flex;
+}
