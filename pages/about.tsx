@@ -20,7 +20,7 @@ export default function About(): ReactElement {
   return (
     <div className="mt-20 space-y-6 tablet:space-y-8">
       <h1
-        className={`${roboto.variable} font-display text-7xl tablet:text-8xl laptop:text-9xl flex flex-col items-center text-primaryPurple text-center tablet:text-left`}
+        className={`${roboto.variable} font-display text-6xl tablet:text-7xl laptop:text-8xl flex flex-col items-center text-primaryPurple text-center tablet:text-left`}
       >
         ABOUT.
       </h1>
