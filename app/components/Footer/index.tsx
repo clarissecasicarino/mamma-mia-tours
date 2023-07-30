@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import Link from "next/link";
-import { FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaFacebookSquare } from "react-icons/fa";
 
 function Footer(): ReactElement {
   return (
@@ -42,8 +42,8 @@ function Footer(): ReactElement {
               href="https://www.instagram.com/"
             />
             <IconLink
-              IconComponent={FaTwitter}
-              href="https://www.twitter.com/"
+              IconComponent={FaFacebookSquare}
+              href="https://www.facebook.com/"
             />
           </div>
         </div>
