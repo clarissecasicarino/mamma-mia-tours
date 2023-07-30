@@ -2,6 +2,7 @@
 import "./styles/globals.css";
 import { Roboto, Playfair_Display } from "next/font/google";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -24,8 +25,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${roboto.variable} ${playfair.variable}`}>
-      <body className="px-8 tablet:px-10">{children}</body>
-      <Footer />
+      <body>
+        <Header />
+        <div className="px-8 tablet:px-10">{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }

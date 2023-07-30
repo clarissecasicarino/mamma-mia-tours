@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-family: "Playfair Display", serif;
+}
+
+.logo a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #9381ff;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #9381ff;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.signup {
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+}
+
+.signup:hover {
+  background-color: #9381ff;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #9381ff;
+  margin: 4px;
+  transition: transform 0.3s;
+}
+
+.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
