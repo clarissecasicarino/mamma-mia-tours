@@ -32,7 +32,7 @@ function Footer(): ReactElement {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col tablet:flex-row text-12 justify-start tablet:justify-center tablet:items-center container px-8 tablet:px-10 pt-6">
+        <div className="flex flex-col tablet:flex-row text-12 justify-start tablet:justify-center tablet:items-center container px-6 tablet:px-8 laptop:px-10 pt-6">
           <p className="flex text-left mr-auto">
             © 2023 Mamma Mia Tours. All rights reserved.
           </p>
