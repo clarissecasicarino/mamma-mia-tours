@@ -7,7 +7,7 @@ function Footer(): ReactElement {
     <>
       <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-200" />
       <footer className="py-6 text-left font-body desktop:mx-52">
-        <div className="container px-8 tablet:px-10 grid grid-cols-2 gap-8">
+        <div className="container px-6 tablet:px-8 laptop:px-10 grid grid-cols-2 gap-8">
           <div>
             <h1 className="font-semibold text-14">About the Company</h1>
             <ul className="space-y-3 pt-6 text-12">
