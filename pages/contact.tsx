@@ -1,22 +1,8 @@
 import React, { ReactElement } from "react";
-import { Roboto, Playfair_Display } from "next/font/google";
-import "@/app/styles/globals.css";
+import { QuoteIcon } from "@/app/assets/svgs";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
-  variable: "--font-roboto",
-  display: "swap",
-});
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-playfair-display",
-  display: "swap",
-});
+import Image from "next/image";
 
 export default function Contact(): ReactElement {
   const notifySubmitSuccess = () => {
@@ -46,18 +32,31 @@ export default function Contact(): ReactElement {
   };
 
   return (
-    <div className="mt-20 space-y-6 tablet:space-y-8">
+    <div className="mt-20 space-y-6 tablet:space-y-4 desktop:space-y-2">
       <h1
-        className={`${roboto.variable} font-display text-5xl tablet:text-7xl laptop:text-8xl flex flex-col items-center text-primaryPurple text-center tablet:text-left`}
+        className={`text-5xl tablet:text-6xl laptop:text-7xl flex flex-col items-center text-primaryPurple text-center tablet:text-left`}
+        style={{ fontFamily: "Roboto, sans-serif" }}
       >
         CONTACT US.
       </h1>
-      <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-200" />
+      <div className="inline-flex items-center justify-center w-full">
+        <hr className="w-48 tablet:w-60 laptop:w-80 h-1 my-2 desktop:my-4 border-0 rounded bg-gray-200" />
+        <div className="absolute px-4 -translate-x-1/2 bg-white left-1/2 ">
+          <Image
+            priority
+            src={QuoteIcon}
+            alt="Quote Icon"
+            height={28}
+            width={28}
+          />
+        </div>
+      </div>
       <section className="flex bg-white px-6 tablet:px-8 laptop:px-10 desktop:px-14 pt-0 tablet:pt-2 desktop:pt-4 justify-center">
         <div
-          className={`px-4 max-w-sm tablet:max-w-md laptop:max-w-lg ${playfair.variable} font-body`}
+          className={`px-4 max-w-sm tablet:max-w-md laptop:max-w-lg`}
+          style={{ fontFamily: "Playfair Display, serif" }}
         >
-          <p className="mb-4 lg:mb-16 font-light text-center text-gray-500 text-14 laptop:text-16 leading-normal tablet:leading-normal laptop:leading-relaxed">
+          <p className="mb-4 tablet:mb-6 font-light text-center text-gray-500 text-12 laptop:text-14 leading-normal tablet:leading-normal laptop:leading-relaxed">
             Thanks for choosing us to plan your next vacation. Please complete
             this form if you have any concerns and {`we'll`} get back to you as
             soon as we can!
