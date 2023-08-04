@@ -5,7 +5,7 @@ import { FaInstagram, FaFacebookSquare } from "react-icons/fa";
 function Footer(): ReactElement {
   return (
     <>
-      <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-200" />
+      <hr className="h-px my-4 bg-gray-200 border-0" />
       <footer className="py-6 text-left font-body desktop:mx-52">
         <div className="container px-6 tablet:px-8 laptop:px-10 grid grid-cols-2 gap-8">
           <div>
