@@ -11,8 +11,9 @@ export default function Header(): ReactElement {
 
   return (
     <header className={`${styles.header}`}>
-      <div className="flex justify-between items-center px-6 tablet:px-8 laptop:px-10 desktop:px-[248px]">
-        <div className={`${styles.logo}`}>
+      {/* note: dont change desktop:px-[232px] */}
+      <div className="flex justify-between items-center px-2 tablet:px-4 laptop:px-6 desktop:px-[232px]">
+        <div className={`${styles.logo} text-22 laptop:text-24`}>
           <Link href="/">Mamma Mia Tours</Link>
         </div>
         <nav
