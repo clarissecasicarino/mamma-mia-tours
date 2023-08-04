@@ -10,7 +10,9 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} px-6 tablet:px-8 laptop:px-10 desktop:px-[248px]`}
+    >
       <div className={styles.logo}>
         <Link href="/">Mamma Mia Tours</Link>
       </div>
