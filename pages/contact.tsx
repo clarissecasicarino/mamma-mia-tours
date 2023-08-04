@@ -41,7 +41,7 @@ export default function Contact(): ReactElement {
       </h1>
       <div className="inline-flex items-center justify-center w-full">
         <hr className="w-48 tablet:w-60 laptop:w-80 h-1 my-2 desktop:my-4 border-0 rounded bg-gray-200" />
-        <div className="absolute px-4 -translate-x-1/2 bg-white left-1/2 ">
+        <div className="absolute px-4 -translate-x-1/2 left-1/2 rounded-lg bg-secondaryPurple">
           <Image
             priority
             src={QuoteIcon}

@@ -15,7 +15,7 @@ export default function About(): ReactElement {
       </h1>
       <div className="inline-flex items-center justify-center w-full">
         <hr className="w-44 tablet:w-56 laptop:w-80 h-1 my-2 desktop:my-4 border-0 rounded bg-gray-200" />
-        <div className="absolute px-4 -translate-x-1/2 bg-white left-1/2 ">
+        <div className="absolute px-4 -translate-x-1/2 left-1/2 bg-secondaryPurple rounded-lg">
           <Image
             priority
             src={QuoteIcon}
@@ -25,7 +25,7 @@ export default function About(): ReactElement {
           />
         </div>
       </div>
-      <div className="px-6 tablet:px-8 laptop:px-10 desktop:px-14 pt-0 tablet:pt-2 desktop:pt-4 pb-4">
+      <div className="px-6 tablet:px-8 laptop:px-10 desktop:px-14 pt-0 tablet:pt-4 pb-4">
         <h4
           className={`text-center tablet:text-left text-22 tablet:text-24 laptop:text-26 text-primaryPurple font-semibold leading-relaxed`}
           style={{ fontFamily: "Playfair Display, serif" }}
@@ -33,7 +33,7 @@ export default function About(): ReactElement {
           Our Adventurous Origin
         </h4>
         <p
-          className={`text-center tablet:text-left pt-5 laptop:pt-8 text-14 tablet:text-16 leading-relaxed tablet:leading-relaxed laptop:leading-loose desktop:leading-loose desktop:text-16`}
+          className={`text-center tablet:text-left pt-4 tablet:pt-6 text-14 tablet:text-16 leading-relaxed tablet:leading-relaxed laptop:leading-relaxed desktop:leading-relaxed desktop:text-16`}
           style={{ fontFamily: "Playfair Display, serif" }}
         >
           Our company is driven by the wild and passionate hearts of a diverse
