@@ -3,18 +3,10 @@
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
-			"anchor_id_carousel": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "packageCarousel",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
+			"anchor_id": {
+				"__TYPE__": "FieldContent",
+				"value": "itself",
+				"type": "Text"
 			}
 		},
 		"items": [

@@ -30,12 +30,17 @@ const PackageCarousel = ({ slice }: PackageCarouselProps): JSX.Element => {
       icon: "🔥",
     });
 
+  const anchorId = slice.primary.anchor_id;
+
   return (
     <>
       <Head>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
       </Head>
-      <div className="flex flex-col laptop:flex-row gap-x-6 justify-center gap-y-6">
+      <div
+        id={anchorId ?? ""}
+        className="flex flex-col laptop:flex-row gap-x-6 justify-center gap-y-6"
+      >
         {slice.items.map((item, index) => (
           <div
             key={index}

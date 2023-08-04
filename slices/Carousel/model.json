@@ -12,14 +12,9 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "anchor_id_carousel": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Anchor ID Carousel",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
+        "anchor_id": {
+          "type": "Text",
+          "config": { "label": "Anchor Id", "placeholder": "" }
         }
       },
       "items": {
