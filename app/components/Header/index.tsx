@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { useState } from "react";
+import { ReactElement, useState } from "react";
 import styles from "./styles.module.css";
 
-const Header: React.FC = () => {
+export default function Header(): ReactElement {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -34,6 +34,4 @@ const Header: React.FC = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}
