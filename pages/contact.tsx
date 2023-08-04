@@ -32,7 +32,7 @@ export default function Contact(): ReactElement {
   };
 
   return (
-    <div className="mt-20 space-y-6 tablet:space-y-4 desktop:space-y-2">
+    <div className="mt-14 laptop:mt-16 space-y-6 tablet:space-y-4 desktop:space-y-2">
       <h1
         className={`text-5xl tablet:text-6xl laptop:text-7xl flex flex-col items-center text-primaryPurple text-center tablet:text-left`}
         style={{ fontFamily: "Roboto, sans-serif" }}
