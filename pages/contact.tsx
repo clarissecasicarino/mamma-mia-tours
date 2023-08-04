@@ -40,7 +40,7 @@ export default function Contact(): ReactElement {
         CONTACT US.
       </h1>
       <div className="inline-flex items-center justify-center w-full">
-        <hr className="w-48 tablet:w-60 laptop:w-80 h-1 my-2 desktop:my-4 border-0 rounded bg-gray-200" />
+        <hr className="w-48 tablet:w-60 laptop:w-80 h-1 desktop:my-4 border-0 rounded bg-gray-200" />
         <div className="absolute px-4 -translate-x-1/2 left-1/2 rounded-lg bg-secondaryPurple">
           <Image
             priority
@@ -51,12 +51,12 @@ export default function Contact(): ReactElement {
           />
         </div>
       </div>
-      <section className="flex bg-white px-6 tablet:px-8 laptop:px-10 desktop:px-14 pt-0 tablet:pt-2 desktop:pt-4 justify-center">
+      <section className="flex bg-white px-6 pt-0 tablet:pt-2 desktop:pt-4 justify-center">
         <div
-          className={`px-4 max-w-sm tablet:max-w-md laptop:max-w-lg`}
+          className={`px-4 w:max-w-sm tablet:max-w-lg laptop:max-w-xl`}
           style={{ fontFamily: "Playfair Display, serif" }}
         >
-          <p className="mb-4 tablet:mb-6 font-light text-center text-gray-500 text-12 laptop:text-14 leading-normal tablet:leading-normal laptop:leading-relaxed">
+          <p className="mb-4 tablet:mb-6 font-light text-center text-gray-500 text-14 laptop:text-16 leading-normal tablet:leading-normal laptop:leading-relaxed">
             Thanks for choosing us to plan your next vacation. Please complete
             this form if you have any concerns and {`we'll`} get back to you as
             soon as we can!
@@ -88,7 +88,7 @@ export default function Contact(): ReactElement {
                 type="text"
                 id="subject"
                 className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-secondaryPurple focus:border-secondaryPurple"
-                placeholder="Let us know how we can help you"
+                placeholder="Let us know your inquiry"
                 required
               />
             </div>
