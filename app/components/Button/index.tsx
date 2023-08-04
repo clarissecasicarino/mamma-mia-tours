@@ -7,7 +7,7 @@ export default function Button({
 }: {
   label: string;
   onClick?: () => void;
-  type?: "rectangle" | "circular" | "special" | "headerBtn";
+  type?: "rectangle" | "circular" | "special";
 }): ReactElement {
   let buttonStyle;
   let textStyle;
