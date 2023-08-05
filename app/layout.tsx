@@ -1,8 +1,8 @@
 "use client";
 import "./styles/globals.css";
 import { Roboto, Playfair_Display } from "next/font/google";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const roboto = Roboto({
   subsets: ["latin"],
