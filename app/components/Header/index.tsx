@@ -1,6 +1,8 @@
+"use client"
 import Link from "next/link";
-import { ReactElement, useState } from "react";
+import { ReactElement, useCallback, useState } from "react";
 import styles from "./styles.module.css";
+import { useRouter } from "next/navigation";
 
 export default function Header(): ReactElement {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,6 +10,12 @@ export default function Header(): ReactElement {
   const handleMenuToggle = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
+
+  const router = useRouter();
+
+  const navigateToSignUpPage = useCallback(() => {
+    router.push("/signup");
+  }, [router]);
 
   return (
     <header className={`${styles.header}`}>
@@ -23,7 +31,7 @@ export default function Header(): ReactElement {
         >
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
-          <button className={styles.signup}>Sign Up</button>
+          <button className={styles.signup} onClick={navigateToSignUpPage}>Sign Up</button>
         </nav>
         {/*  */}
         <div className={styles.hamburger} onClick={handleMenuToggle}>
@@ -37,7 +45,6 @@ export default function Header(): ReactElement {
             className={`${styles.bar} text-12 ${isMenuOpen ? styles.open : ""}`}
           />
         </div>
-        {/*  */}
       </div>
     </header>
   );

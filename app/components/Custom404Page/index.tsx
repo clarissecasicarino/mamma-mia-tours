@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 import MainIcon from "../../assets/images/main-icon.png";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import styles from "./404.module.css";
 import Button from "@/app/components/Button";
 import "@/app/styles/globals.css";
