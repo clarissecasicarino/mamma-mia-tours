@@ -69,7 +69,7 @@ export default function Contact(): ReactElement {
               this form if you have any concerns and {`we'll`} get back to you
               as soon as we can!
             </p>
-            <form onSubmit={handleSubmit} className="space-y-8">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
                   htmlFor="email"
@@ -81,7 +81,7 @@ export default function Contact(): ReactElement {
                   type="email"
                   id="email"
                   className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-secondaryPurple focus:border-secondaryPurple block w-full p-2.5"
-                  placeholder="name@mammamiatours.com"
+                  placeholder="mammamiatours@email.com"
                   required
                 />
               </div>
