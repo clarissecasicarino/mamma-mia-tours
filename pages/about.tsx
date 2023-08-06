@@ -3,10 +3,14 @@ import React, { ReactElement } from "react";
 import Image from "next/image";
 import "../app/styles/globals.css";
 import Header from "../app/components/Header";
+import Head from "next/head";
 
 export default function About(): ReactElement {
   return (
     <>
+      <Head>
+        <title>Mamma Mia Tours</title>
+      </Head>
       <Header />
       {/* never change anything with these custom padding values unless necessary */}
       <div className="mt-14 laptop:mt-16 space-y-6 tablet:space-y-4 desktop:space-y-2 px-6 tablet:px-8 laptop:px-10 desktop:px-52">
@@ -38,7 +42,7 @@ export default function About(): ReactElement {
               Our Adventurous Origin
             </h4>
             <p
-              className={`text-center tablet:text-left pt-2 tablet:pt-4 text-14 tablet:text-16 leading-relaxed tablet:leading-relaxed laptop:leading-relaxed desktop:leading-relaxed desktop:text-16`}
+              className={`text-center tablet:text-left pt-2 tablet:pt-4 text-14 tablet:text-16 leading-relaxed tablet:leading-relaxed laptop:leading-relaxed desktop:leading-relaxed desktop:text-16 text-gray-500`}
               style={{ fontFamily: "Playfair Display, serif" }}
             >
               Our company is driven by the wild and passionate hearts of a
@@ -52,6 +56,3 @@ export default function About(): ReactElement {
     </>
   );
 }
-
-
-
