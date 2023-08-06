@@ -6,6 +6,8 @@
   position: sticky;
   top: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* dont remove the z-index for the sticky top behavior when scrolled down. */
+  z-index: 100;
 }
 
 .logo a {
