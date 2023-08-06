@@ -1,6 +1,5 @@
 import { QuoteIcon } from "@/app/assets/svgs";
 import React, { ReactElement } from "react";
-import Image from "next/image";
 import "../app/styles/globals.css";
 import Header from "../app/components/Header";
 import Head from "next/head";
@@ -25,13 +24,7 @@ export default function About(): ReactElement {
           <div className="pt-4 inline-flex items-center justify-center w-full">
             <hr className="w-48 tablet:w-60 laptop:w-80 h-1 my-2 desktop:my-4 border-0 rounded bg-gray-200" />
             <div className="absolute px-4 -translate-x-1/2 left-1/2 bg-secondaryPurple rounded-lg items-center">
-              <Image
-                priority
-                src={QuoteIcon}
-                alt="Quote Icon"
-                height={28}
-                width={28}
-              />
+              <QuoteIcon height={28} width={28} />
             </div>
           </div>
           {/* added custom px-10 for desktop screen res to align it in the center */}

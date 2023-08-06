@@ -2,7 +2,6 @@ import React, { ReactElement } from "react";
 import { QuoteIcon } from "@/app/assets/svgs";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Image from "next/image";
 import Header from "../app/components/Header";
 import Head from "next/head";
 
@@ -50,13 +49,7 @@ export default function Contact(): ReactElement {
         <div className="inline-flex items-center justify-center w-full">
           <hr className="w-48 tablet:w-60 laptop:w-80 h-1 desktop:my-4 border-0 rounded bg-gray-200" />
           <div className="absolute px-4 -translate-x-1/2 left-1/2 rounded-lg bg-secondaryPurple">
-            <Image
-              priority
-              src={QuoteIcon}
-              alt="Quote Icon"
-              height={28}
-              width={28}
-            />
+            <QuoteIcon height={28} width={28} />
           </div>
         </div>
         <section className="flex px-6 pt-0 tablet:pt-2 desktop:pt-4 justify-center">
