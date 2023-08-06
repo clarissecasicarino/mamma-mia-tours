@@ -75,7 +75,7 @@ export default function Contact(): ReactElement {
                   htmlFor="email"
                   className="block mb-2 text-sm font-medium text-black"
                 >
-                  Your email
+                  Your Email
                 </label>
                 <input
                   type="email"
@@ -105,7 +105,7 @@ export default function Contact(): ReactElement {
                   htmlFor="message"
                   className="block mb-2 text-sm font-medium text-gray-900"
                 >
-                  Your message
+                  Your Message
                 </label>
                 <textarea
                   id="message"
