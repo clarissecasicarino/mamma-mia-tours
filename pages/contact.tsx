@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Image from "next/image";
 import Header from "../app/components/Header";
+import Head from "next/head";
 
 export default function Contact(): ReactElement {
   const notifySubmitSuccess = () => {
@@ -34,6 +35,10 @@ export default function Contact(): ReactElement {
 
   return (
     <>
+      <Head>
+        <title>Mamma Mia Tours</title>
+        <link rel="icon" href="../app/icon.png" sizes="32x32" />
+      </Head>
       <Header />
       <div className="mt-14 laptop:mt-16 space-y-6 tablet:space-y-4 desktop:space-y-2">
         <h1
@@ -54,7 +59,7 @@ export default function Contact(): ReactElement {
             />
           </div>
         </div>
-        <section className="flex bg-white px-6 pt-0 tablet:pt-2 desktop:pt-4 justify-center">
+        <section className="flex px-6 pt-0 tablet:pt-2 desktop:pt-4 justify-center">
           <div
             className={`px-4 w:max-w-sm tablet:max-w-lg laptop:max-w-xl`}
             style={{ fontFamily: "Playfair Display, serif" }}
