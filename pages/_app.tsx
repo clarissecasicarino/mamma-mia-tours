@@ -1,3 +1,4 @@
+import RootLayout from "@/app/layout";
 import About from "./about";
 import Contact from "./contact";
 
@@ -8,8 +9,12 @@ function MyApp({ Component, pageProps, router }) {
   } else if (router.pathname === '/contact') {
     return <Contact />;
   }
-
-  return <Component {...pageProps} />
+  
+  return (
+    <RootLayout >
+      <Component {...pageProps} />
+    </RootLayout>
+  )
 }
 
 export default MyApp;
