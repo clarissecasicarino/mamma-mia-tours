@@ -1,6 +1,7 @@
 import Header from "@/app/components/Header";
 import React, { ReactElement } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import Head from "next/head";
 
 export default function SignUp(): ReactElement {
   const notifyRegisterSuccess = () => {
@@ -30,17 +31,21 @@ export default function SignUp(): ReactElement {
 
   return (
     <>
+      <Head>
+        <title>Mamma Mia Tours</title>
+        <link rel="icon" href="../app/icon.png" sizes="32x32" />
+      </Head>
       <Header />
       <div className="flex justify-center items-center pt-2">
         <div className="flex flex-col px-6 py-8 mx-auto md:h-screen lg:py-0 max-w-md tablet:max-w-xl laptop:max-w-2xl">
           {/*  */}
           <section
-            className="text-14 laptop:text-16 leading-normal tablet:leading-normal laptop:leading-normal desktop:leading-normal text-gray-500 py-4 text-center"
+            className="text-14 laptop:text-16 leading-normal tablet:leading-normal laptop:leading-relaxed text-gray-500 py-4 text-center"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
             This project is purely a frontend application, backend integration
             will happen in the future. Thus, this sign up page wont save
-            anything in a database. It's just for simulation purposes.
+            anything in a database. {`It's`} just for simulation purposes.
           </section>
           <div className="w-full bg-secondaryPurple rounded-lg shadow tablet:mt-0 xl:p-0">
             <div className="p-6 space-y-4 tablet:space-y-6 tablet:p-8">
@@ -116,7 +121,7 @@ export default function SignUp(): ReactElement {
                       required
                     />
                   </div>
-                  <div className="ml-3 text-14">
+                  <div className="ml-3 text-sm">
                     <label
                       htmlFor="terms"
                       className="font-light text-primaryPurple"

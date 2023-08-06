@@ -10,6 +10,7 @@ export default function About(): ReactElement {
     <>
       <Head>
         <title>Mamma Mia Tours</title>
+        <link rel="icon" href="../app/icon.png" sizes="32x32" />
       </Head>
       <Header />
       {/* never change anything with these custom padding values unless necessary */}
