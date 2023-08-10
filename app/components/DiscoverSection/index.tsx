@@ -9,7 +9,7 @@ import { Link } from "react-scroll";
 import Button from "../Button";
 
 
-export default function FirstComponent() {
+export default function DiscoverSection() {
 
   return (
     <div className="flex flex-col laptop:flex-row pt-16 gap-x-4 justify-center">
