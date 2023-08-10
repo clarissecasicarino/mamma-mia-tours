@@ -2,12 +2,12 @@ import { SliceZone } from "@prismicio/react";
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import "./styles/globals.css";
-import FirstComponent from "./components/FirstComponent";
-import SecondComponent from "./components/SecondComponent";
-import ThirdComponent from "./components/ThirdComponent";
 import QuestionComponent from "./components/QuestionComponent";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import DiscoverSection from "./components/DiscoverSection";
+import DescriptiveContainer from "./components/DescriptiveContainer";
+import ExtendedDescriptiveContainer from "./components/ExtendedDescriptiveContainer";
 
 export default async function Home() {
   const client = createClient();
@@ -18,9 +18,9 @@ export default async function Home() {
     <div>
       <Header />
       <div className="px-6 tablet:px-8 laptop:px-10 space-y-4">
-        <FirstComponent />
-        <SecondComponent />
-        <ThirdComponent />
+        <DiscoverSection />
+        <DescriptiveContainer />
+        <ExtendedDescriptiveContainer />
         <SliceZone slices={document.data.slices} components={components} />
         <QuestionComponent />
       </div>
