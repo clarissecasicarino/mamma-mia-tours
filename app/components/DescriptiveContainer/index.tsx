@@ -2,7 +2,7 @@ import React from "react";
 import BeachImage from "../../assets/images/beachfront.jpeg";
 import Image from "next/image";
 
-export default function SecondComponent() {
+export default function DescriptiveContainer() {
   return (
     <div className="w-full flex flex-col tablet:flex-row py-4 gap-x-8 justify-center items-center">
       <div className="ax-w-sm desktop:max-w-[25rem] max-h-96 flex justify-center">
