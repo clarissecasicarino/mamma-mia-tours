@@ -2,7 +2,7 @@ import React from "react";
 import BoatImage from "../../assets/images/boat.jpeg";
 import Image from "next/image";
 
-export default function ThirdComponent() {
+export default function ExtendedDescriptiveContainer() {
   return (
     <div className="w-full flex flex-col tablet:flex-row py-4 gap-x-8 justify-center items-center">
       <div className={`space-y-4 max-w-sm laptop:max-w-lg tablet:pt-2`}>
