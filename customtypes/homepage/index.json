@@ -14,10 +14,7 @@
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
-          "choices": {
-            "package_carousel": { "type": "SharedSlice" },
-            "reviews_carousel": { "type": "SharedSlice" }
-          }
+          "choices": { "package_carousel": { "type": "SharedSlice" } }
         }
       }
     }

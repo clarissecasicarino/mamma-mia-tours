@@ -4,5 +4,4 @@ import dynamic from "next/dynamic";
 
 export const components = {
   package_carousel: dynamic(() => import("./Carousel")),
-  reviews_carousel: dynamic(() => import("./ReviewsCarousel")),
 };

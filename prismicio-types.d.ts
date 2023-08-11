@@ -23,9 +23,7 @@ interface HomepageDocumentData {
  * Slice for *Home Page → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice =
-  | PackageCarouselSlice
-  | ReviewsCarouselSlice;
+type HomepageDocumentDataSlicesSlice = PackageCarouselSlice;
 /**
  * Home Page document from Prismic
  *
@@ -134,82 +132,6 @@ export type PackageCarouselSlice = prismic.SharedSlice<
   "package_carousel",
   PackageCarouselSliceVariation
 >;
-/**
- * Item in ReviewsCarousel → Items
- *
- */
-export interface ReviewsCarouselSliceDefaultItem {
-  /**
-   * Reviewer Picture field in *ReviewsCarousel → Items*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: reviews_carousel.items[].reviewer_picture
-   * - **Documentation**: https://prismic.io/docs/core-concepts/image
-   *
-   */
-  reviewer_picture: prismic.ImageField<never>;
-  /**
-   * Review Description field in *ReviewsCarousel → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: reviews_carousel.items[].review_description
-   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-   *
-   */
-  review_description: prismic.KeyTextField;
-  /**
-   * Reviewer Name field in *ReviewsCarousel → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: reviews_carousel.items[].reviewer_name
-   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-   *
-   */
-  reviewer_name: prismic.KeyTextField;
-  /**
-   * Review Card Bg Color field in *ReviewsCarousel → Items*
-   *
-   * - **Field Type**: Color
-   * - **Placeholder**: *None*
-   * - **API ID Path**: reviews_carousel.items[].review_card_bg_color
-   * - **Documentation**: https://prismic.io/docs/core-concepts/color
-   *
-   */
-  review_card_bg_color: prismic.ColorField;
-}
-/**
- * Default variation for ReviewsCarousel Slice
- *
- * - **API ID**: `default`
- * - **Description**: `Default`
- * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
- *
- */
-export type ReviewsCarouselSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Record<string, never>,
-  Simplify<ReviewsCarouselSliceDefaultItem>
->;
-/**
- * Slice variation for *ReviewsCarousel*
- *
- */
-type ReviewsCarouselSliceVariation = ReviewsCarouselSliceDefault;
-/**
- * ReviewsCarousel Shared Slice
- *
- * - **API ID**: `reviews_carousel`
- * - **Description**: `ReviewsCarousel`
- * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
- *
- */
-export type ReviewsCarouselSlice = prismic.SharedSlice<
-  "reviews_carousel",
-  ReviewsCarouselSliceVariation
->;
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -228,10 +150,6 @@ declare module "@prismicio/client" {
       PackageCarouselSliceDefault,
       PackageCarouselSliceVariation,
       PackageCarouselSlice,
-      ReviewsCarouselSliceDefaultItem,
-      ReviewsCarouselSliceDefault,
-      ReviewsCarouselSliceVariation,
-      ReviewsCarouselSlice,
     };
   }
 }
