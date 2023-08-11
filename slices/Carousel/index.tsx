@@ -29,44 +29,44 @@ const PackageCarousel = ({ slice }: PackageCarouselProps): JSX.Element => {
       icon: "🔥",
     });
 
-  const anchorId = slice.primary.anchor_id;
+  const anchorId = slice.primary.anchor_id ?? "";
 
   return (
-    <div
-      id={anchorId ?? ""}
-      className="flex flex-col laptop:flex-row gap-x-6 justify-center gap-y-6"
-    >
-      {slice.items.map((item, index) => (
-        <div
-          key={index}
-          className={`rounded-3xl border h-[330px] w-full laptop:w-[298px]`}
-          style={{ backgroundColor: item.package_bg_color ?? "white" }}
-        >
-          <div className="px-6 py-5 flex flex-col gap-y-2">
-            <p key={index} className="font-body text-12 laptop:text-14">
-              {item.package_title}
-            </p>
-            <p className="font-display font-extrabold py-5 text-40">
-              {item.package_price}
-            </p>
-            <section className="py-1">
-              <PrismicRichText
-                field={item.package_info}
-                components={components}
-              />
-            </section>
-            <div className="flex pt-2 justify-center">
-              <Button
-                label="Book Now"
-                type="rectangle"
-                onClick={() => notify(item.package_title)}
-              />
+    <>
+      <section className="h-20" id={anchorId}>{""}</section>
+      <div className="flex flex-col laptop:flex-row gap-x-6 justify-center gap-y-6 pb-10">
+        {slice.items.map((item, index) => (
+          <div
+            key={index}
+            className={`rounded-3xl border h-[330px] w-full laptop:w-[298px]`}
+            style={{ backgroundColor: item.package_bg_color ?? "white" }}
+          >
+            <div className="px-6 py-5 flex flex-col gap-y-2">
+              <p key={index} className="font-body text-12 laptop:text-14">
+                {item.package_title}
+              </p>
+              <p className="font-display font-extrabold py-5 text-40">
+                {item.package_price}
+              </p>
+              <section className="py-1">
+                <PrismicRichText
+                  field={item.package_info}
+                  components={components}
+                />
+              </section>
+              <div className="flex pt-2 justify-center">
+                <Button
+                  label="Book Now"
+                  type="rectangle"
+                  onClick={() => notify(item.package_title)}
+                />
+              </div>
+              <ToastContainer />
             </div>
-            <ToastContainer />
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 };
 
