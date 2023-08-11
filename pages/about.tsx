@@ -1,6 +1,5 @@
 import { QuoteIcon } from "@/app/assets/svgs";
 import React, { ReactElement } from "react";
-import "../app/styles/globals.css";
 import Header from "../app/components/Header";
 import Head from "next/head";
 
