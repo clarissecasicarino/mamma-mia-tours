@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import DiscoverSection from "./components/DiscoverSection";
 import DescriptiveContainer from "./components/DescriptiveContainer";
 import ExtendedDescriptiveContainer from "./components/ExtendedDescriptiveContainer";
+import ReviewCarousel from "./components/ReviewCarousel";
 
 export default async function Home() {
   const client = createClient();
@@ -22,6 +23,7 @@ export default async function Home() {
         <DescriptiveContainer />
         <ExtendedDescriptiveContainer />
         <SliceZone slices={document.data.slices} components={components} />
+        <ReviewCarousel />
         <QuestionComponent />
       </div>
       <Footer />
