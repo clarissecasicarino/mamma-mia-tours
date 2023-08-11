@@ -1,6 +1,16 @@
 /** @type {import('next').NextConfig} */
 
 module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.prismic.io',
+        port: '',
+        pathname: '/mamma-mia-tours/**',
+      },
+    ],
+  },
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
@@ -29,5 +39,5 @@ module.exports = {
     return config;
   },
 
-  // ...other config
+  // ... place other config here
 };
