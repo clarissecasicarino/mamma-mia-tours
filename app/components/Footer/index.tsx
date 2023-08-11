@@ -6,7 +6,7 @@ function Footer(): ReactElement {
   return (
     <>
       <hr className="h-px my-4 bg-gray-200 border-0" />
-      <footer className="py-6 text-left font-body desktop:mx-52">
+      <footer className="py-6 text-left font-body desktop:mx-10">
         <div className="container px-6 tablet:px-8 laptop:px-10 grid grid-cols-2 gap-8">
           <div>
             <h1 className="font-semibold text-14">About the Company</h1>
@@ -60,9 +60,9 @@ function IconLink<E>({
   href: string;
 }): ReactElement {
   return (
-    <a href={href} className="flex h-4">
+    <Link href={href} className="flex h-4">
       <IconComponent className="m-auto h-4 w-4 hover:text-primaryPurple" />
-    </a>
+    </Link>
   );
 }
 

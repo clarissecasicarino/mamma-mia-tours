@@ -14,7 +14,7 @@ export default function DiscoverSection() {
   return (
     <div className="flex flex-col laptop:flex-row pt-16 gap-x-4 justify-center">
       <div
-        className={`space-y-4 ${styles["custom-404-text-container"]} laptop:max-w-md pt-2`}
+        className={`space-y-4 ${styles["first-content-text-container"]} laptop:max-w-md desktop:max-w-3xl pt-2`}
       >
         <p
           className={`text-center tablet:text-left text-4xl pt-6 font-display leading-tight font-extrabold`}
@@ -41,7 +41,7 @@ export default function DiscoverSection() {
           </Link>
         </div>
       </div>
-      <div className="pt-6 w-full desktop:w-[29rem]">
+      <div className="pt-6 w-full desktop:w-[34rem]">
         <Image src={MainIcon} alt="Main Icon" />
       </div>
     </div>
