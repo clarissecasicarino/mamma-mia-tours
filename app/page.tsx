@@ -22,7 +22,13 @@ export default async function Home() {
         <DiscoverSection />
         <DescriptiveContainer />
         <ExtendedDescriptiveContainer />
+      </div>
+
+      <div className="px-6 tablet:px-8 laptop:px-10 pt-2">
         <SliceZone slices={document.data.slices} components={components} />
+      </div>
+
+      <div className="px-6 tablet:px-8 laptop:px-10 space-y-4">
         <ReviewCarousel />
         <QuestionComponent />
       </div>
