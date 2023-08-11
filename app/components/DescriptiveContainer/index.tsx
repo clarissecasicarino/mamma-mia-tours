@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function DescriptiveContainer() {
   return (
     <div className="w-full flex flex-col tablet:flex-row py-4 gap-x-8 justify-center items-center">
-      <div className="ax-w-sm desktop:max-w-[34rem] max-h-96 flex justify-center">
+      <div className="max-w-sm desktop:max-w-[34rem] max-h-96 flex justify-center">
         <Image src={BeachImage} alt="Beach Image" className="rounded-lg" />
       </div>
       <div className={`space-y-4 max-w-sm laptop:max-w-lg desktop:max-w-3xl pt-6 tablet:pt-2`}>
