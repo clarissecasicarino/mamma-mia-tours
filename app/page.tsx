@@ -24,11 +24,11 @@ export default async function Home() {
         <ExtendedDescriptiveContainer />
       </div>
 
-      <div className="px-6 tablet:px-8 laptop:px-10 pt-2">
+      <div className="px-6 tablet:px-8 laptop:px-10 pt-2 desktop:pb-8">
         <SliceZone slices={document.data.slices} components={components} />
       </div>
 
-      <div className="px-6 tablet:px-8 laptop:px-10 space-y-4">
+      <div className="px-6 tablet:px-8 laptop:px-10 space-y-4 desktop:space-y-6">
         <ReviewCarousel />
         <QuestionComponent />
       </div>
