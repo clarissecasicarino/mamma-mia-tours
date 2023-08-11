@@ -25,7 +25,7 @@ export default function Header(): ReactElement {
         <div className="text-22 laptop:text-24 font-bold px-2 text-primaryPurple pl-6 tablet:pl-8 laptop:pl-10">
           <Link href="/">Mamma Mia Tours</Link>
         </div>
-        <nav className="hidden tablet:flex space-x-4 items-center pr-0 tablet:pr-6 laptop:pr-8 text-14 tablet:text-16 font-medium">
+        <nav className="hidden tablet:flex space-x-4 items-center pr-0 tablet:pr-8 laptop:pr-10 text-14 tablet:text-16 font-medium">
           <Link href="/about" className="hover:text-primaryPurple">
             About
           </Link>
