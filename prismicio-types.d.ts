@@ -46,15 +46,15 @@ export type AllDocumentTypes = HomepageDocument;
  */
 interface PackageCarouselSliceDefaultPrimary {
   /**
-   * Anchor ID Carousel field in *Carousel → Primary*
+   * Anchor Id field in *Carousel → Primary*
    *
-   * - **Field Type**: Rich Text
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: package_carousel.primary.anchor_id_carousel
-   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   * - **API ID Path**: package_carousel.primary.anchor_id
+   * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
    *
    */
-  anchor_id_carousel: prismic.RichTextField;
+  anchor_id: prismic.KeyTextField;
 }
 /**
  * Item in Carousel → Items

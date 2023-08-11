@@ -1,13 +1,13 @@
 import React, { ReactElement } from "react";
 import Link from "next/link";
-import { FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaFacebookSquare } from "react-icons/fa";
 
 function Footer(): ReactElement {
   return (
     <>
-      <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-200" />
-      <footer className="py-6 text-left font-body desktop:mx-52">
-        <div className="container px-8 tablet:px-10 grid grid-cols-2 gap-8">
+      <hr className="h-px my-4 bg-gray-200 border-0" />
+      <footer className="py-6 text-left font-body desktop:mx-10">
+        <div className="container px-6 tablet:px-8 laptop:px-10 grid grid-cols-2 gap-8">
           <div>
             <h1 className="font-semibold text-14">About the Company</h1>
             <ul className="space-y-3 pt-6 text-12">
@@ -32,7 +32,7 @@ function Footer(): ReactElement {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col tablet:flex-row text-12 justify-start tablet:justify-center tablet:items-center container px-8 tablet:px-10 pt-6">
+        <div className="flex flex-col tablet:flex-row text-12 justify-start tablet:justify-center tablet:items-center container px-6 tablet:px-8 laptop:px-10 pt-6">
           <p className="flex text-left mr-auto">
             © 2023 Mamma Mia Tours. All rights reserved.
           </p>
@@ -42,8 +42,8 @@ function Footer(): ReactElement {
               href="https://www.instagram.com/"
             />
             <IconLink
-              IconComponent={FaTwitter}
-              href="https://www.twitter.com/"
+              IconComponent={FaFacebookSquare}
+              href="https://www.facebook.com/"
             />
           </div>
         </div>
@@ -60,9 +60,9 @@ function IconLink<E>({
   href: string;
 }): ReactElement {
   return (
-    <a href={href} className="flex h-4">
+    <Link href={href} className="flex h-4">
       <IconComponent className="m-auto h-4 w-4 hover:text-primaryPurple" />
-    </a>
+    </Link>
   );
 }
 

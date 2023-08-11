@@ -1,0 +1,16 @@
+.signup {
+  background-color: #000;
+  width: 80px;
+  height: 36px;
+  color: #fff;
+  font-size: 16px;
+  padding: 0.25rem 0.25rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+}
+
+.signup:hover {
+  background-color: #9381ff;
+}

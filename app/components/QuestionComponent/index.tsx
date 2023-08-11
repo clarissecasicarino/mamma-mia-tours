@@ -2,7 +2,7 @@ import React from "react";
 
 export default function QuestionComponent() {
   return (
-    <div className="pt-10 tablet:pt-12 laptop:pt-16 desktop:mx-52">
+    <div className="pt-6 tablet:pt-8 laptop:pt-10 pb-2 tablet:pb-6 desktop:mx-10">
       <h1 className="text-32 laptop:text-36 font-display font-extrabold leading-tight">
         Frequently Asked Questions
       </h1>

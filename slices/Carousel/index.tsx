@@ -5,7 +5,6 @@ import {
   SliceComponentProps,
   PrismicRichTextProps,
 } from "@prismicio/react";
-import Head from "next/head";
 import Button from "@/app/components/Button";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -30,12 +29,12 @@ const PackageCarousel = ({ slice }: PackageCarouselProps): JSX.Element => {
       icon: "🔥",
     });
 
+  const anchorId = slice.primary.anchor_id ?? "";
+
   return (
     <>
-      <Head>
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-      </Head>
-      <div className="flex flex-col laptop:flex-row gap-x-6 justify-center gap-y-6">
+      <section className="h-20" id={anchorId}>{""}</section>
+      <div className="flex flex-col laptop:flex-row gap-x-6 justify-center gap-y-6 pb-10">
         {slice.items.map((item, index) => (
           <div
             key={index}
