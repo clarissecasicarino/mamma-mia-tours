@@ -9,7 +9,6 @@ module.exports = {
   theme: {
     screens: {
       "mobile": "320px",
-      "mobileLarge": "425px",
       "tablet": "768px",
       "laptop": "1024px",
       "desktop": "1440px",
