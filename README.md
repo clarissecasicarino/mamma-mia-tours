@@ -2,7 +2,7 @@
 This is a Travel Agency Booking website developed using Next.js, React, TypeScript, and Prismic CMS.
 
 
-## Why Mamma Mia Tours Matters
+## Why Mamma Mia Tours Matter
 Mamma Mia Tours presents a sophisticated blend of cutting-edge technology and seamless user experience within the realm of travel agency booking. Here's why you should care about this project:
 
 ### 1. Innovative Technology Stack
