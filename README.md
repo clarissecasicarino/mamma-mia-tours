@@ -1,8 +1,6 @@
 # Mamma Mia Tours
 This is a Travel Agency Booking website developed using Next.js, React, TypeScript, and Prismic CMS.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
